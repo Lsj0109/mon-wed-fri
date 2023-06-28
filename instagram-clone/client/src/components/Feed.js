@@ -34,13 +34,72 @@ export default function Feed() {
   console.log(articles)
 
   // 좋아요 처리
-  async function handleFavorite(id) {}
+  async function handleFavorite(id) {
+    try {
+      // 서버 요청
+      await favorite(id);
+
+      const updatedArticles = articles.map(article => {
+        if (article.id === id) {
+          return {
+            ...article,
+            isFavorite: true,
+            favoriteCount: article.favoriteCount + 1
+          }
+        }
+        return article;
+      })
+  
+      // articles 업데이트
+      setArticles(updatedArticles);
+
+    } catch (error) {
+      alert(error)
+    }
+  }
 
   // 좋아요 취소 처리
-  async function handleUnfavorite(id) {}
+  async function handleUnfavorite(id) {
+    try {
+      // 서버 요청
+      await unfavorite(id)
+
+      const updatedArticles = articles.map(article => {
+        if (article.id === id) {
+          return {
+            ...article,
+            isFavorite: false,
+            favoriteCount: article.favoriteCount - 1
+          }
+        }
+        return article;
+      })
+  
+      // articles 업데이트
+      setArticles(updatedArticles);
+
+    } catch (error) {
+      alert(error)
+    }
+  }
 
   // 게시물 삭제 처리
-  async function handleDelete(id) {}
+  async function handleDelete(id) {
+    try {
+      await deleteArticle(id); 
+
+      const remainingArticles = articles.filter(article => {
+        if (id !== article.id) {
+          return article;
+        }
+      });
+  
+      setArticles(remainingArticles);
+    
+    } catch (error) {
+      alert(error)
+    }
+  }
 
   // 게시물 리스트
   const articleList = articles.map(article => (
@@ -67,7 +126,7 @@ export default function Feed() {
         More
       </button>
     </div>
-  )
+  );
 
   return (
     <>

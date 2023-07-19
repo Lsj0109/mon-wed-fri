@@ -831,7 +831,899 @@
     temporibus quos odit expedita. Facere cumque excepturi nulla facilis aliquam vel mollitia?
   </div> -->
 
+  <!-- <style>
+    #ireland .item {
+      width: 50px;
+      height: 100px;
+      display: inline-block;
+    }
+
+    #netherlands .item {
+      width: 160px;
+      height: 40px;
+      display: block;
+    }
+
+    .bg-green {
+      background-color: green;
+    }
+
+    .bg-white {
+      background-color: #fff;
+    }
+
+    .bg-gold {
+      background-color: gold;
+    }
+
+    .bg-red {
+      background-color: red;
+    }
+
+    .bg-blue {
+      background-color: blue;
+    }
+  </style>
+
+  <h3>Ireland</h3>
+  <div id="ireland">
+    <div class="item bg-green"></div>
+    <div class="item bg-white"></div>
+    <div class="item bg-gold"></div>
+  </div>
+
+  <h3>Netherlands</h3>
+  <div id="netherlands">
+    <div class="item bg-red"></div>
+    <div class="item bg-white"></div>
+    <div class="item bg-blue"></div>
+  </div> -->
+
+
+  <!-- <h1>box sizing</h1>
+  <p>엘리먼트의 크기 처리</p>
+
+  <style>
+    .item {
+      width: 100px;
+      height: 100px;
+      border: 1px solid;
+      padding: 0.5rem;
+      background-color: #ddd;
+    }
+
+    .content-box {
+      box-sizing: content-box;
+    }
+
+    .border-box {
+      box-sizing: border-box;
+    }
+  </style>
+
+  <h3>box sizing: content box (기본값)</h3>
+  <p>border와 padding이 주어진 크기 밖으로 적용된다</p>
+  <div class="item content-box">118 x 118</div>
+
+  <h3>box sizing: border box</h3>
+  <p>border와 padding이 주어진 크기 안으로 적용된다</p>
+  <div class="item border-box">100 x 100</div> -->
   
+
+  <!-- <h1>overflow</h1>
+  <p>넘치는 부분 처리 방법</p>
+
+  <style>
+    .container {
+      border: 1px solid;
+      height: 50px;
+    }
+
+    .overflow-hidden {
+      overflow: hidden;
+    }
+
+    .overflow-auto {
+      overflow: auto;
+    }
+
+    .overflow-visible {
+      overflow: visible;
+    }
+  </style>
+  
+  <h3>overflow: hidden</h3>
+  <p>넘치는 부분을 숨긴다</p>
+  <div class="container overflow-hidden">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+    Hic maxime soluta provident nihil dolore accusamus, vitae adipisci, 
+    et repudiandae, eum aliquid inventore ratione blanditiis harum officia animi corrupti eligendi facere.
+  </div>
+  
+  <h3>overflow: auto</h3>
+  <p>넘치는 경우 스크롤을 생성한다</p>
+  <div class="container overflow-auto">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+    Hic maxime soluta provident nihil dolore accusamus, vitae adipisci, 
+    et repudiandae, eum aliquid inventore ratione blanditiis harum officia animi corrupti eligendi facere.
+  </div>
+  
+  <h3>overflow: visible (default)</h3>
+  <p>넘치는 부분을 보이게한다</p>
+  <div class="container overflow-visible">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+    Hic maxime soluta provident nihil dolore accusamus, vitae adipisci, 
+    et repudiandae, eum aliquid inventore ratione blanditiis harum officia animi corrupti eligendi facere.
+  </div>   -->
+
+
+  <!-- <h1>white space</h1>
+  <p>빈공간 처리 방법</p>
+
+  <style>
+    .container {
+      border: 1px solid;
+    }
+
+    .item {
+      width: 200px; 
+      display: inline-block;
+      background-color: #ddd;
+    }
+
+    .whitespace-normal {
+      /* 감싼다(wrap) */
+      white-space: normal
+    }
+
+    .whitespace-nowrap {
+      /* 감싸지 않는다 */
+      white-space: nowrap;
+    }
+  </style>
+
+
+  <h3>white space: normal (default)</h3>
+
+  <div class="container whitespace-normal">
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+  </div>
+
+  <h3>white space: nowrap</h3>
+  
+  <div class="container whitespace-nowrap">
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+  </div> -->
+
+
+  <!-- <h1>position</h1>
+  <p>
+    엘리먼트의 위치 결정
+    static, relative, absolute, fixed 등
+  </p>
+
+  <h3>static</h3>
+
+  <style>
+    .item {
+      background-color: #ddd;
+      display: inline-block;
+      padding: 0.5rem;
+    }
+    
+    .static {
+      /* 정적(움직이지 않는다) */
+      position: static;
+    }
+  </style>
+
+
+  <div class="item static">item</div>
+  <div class="item static">item</div>
+  <div class="item static">item</div> -->
+
+  <!-- <h3>relative</h3>
+  <p>원래 자신의 위치에 상대적으로 위치한다</p>
+
+  <style>
+    .item {
+      background-color: #ddd;
+      display: inline-block;
+      padding: 0.5rem;
+    }
+
+    .relative {
+      position: relative;
+    }
+
+    .top-2 {
+      /* 아래로 이동 */
+      top: 0.5rem;
+    }
+
+    .left-2 {
+      /* 오른쪽으로 이동 */
+      left: 0.5rem;
+    }
+  </style>
+
+  <div class="item">item</div>
+  <div class="item relative top-2 left-2">item</div>
+  <div class="item">item</div> -->
+
+
+  <!-- <h3>absolute</h3>
+  <p>relative 부모에 상대적으로 위치한다</p>
+
+  <style>
+    .container {
+      border: 1px solid;
+      width: 200px;
+      height: 200px;
+    }
+    
+    .item {
+      background-color: #ddd;
+      padding: 0.5rem;
+    }
+    
+    .relative {
+      position: relative;
+    }
+    
+    .absolute {
+      position: absolute;
+    }
+
+    .top-0 {
+      top: 0;
+    }
+
+    .left-0 {
+      left: 0;
+    }
+
+    .bottom-0 {
+      bottom: 0;
+    }
+    
+    .right-0 {
+      right: 0;
+    }
+  </style>
+
+  <div class="container relative">
+    <div class="item absolute top-0 left-0">item 1</div>
+    <div class="item absolute top-0 right-0">item 2</div>
+    <div class="item absolute bottom-0 left-0">item 3</div>
+    <div class="item absolute bottom-0 right-0">item 4</div>
+  </div> -->
+
+  <!-- <h3>fixed</h3>
+  <p>뷰포트에 상대적으로 위치한다</p>
+
+  <style>
+    .item {
+      background-color: #ddd;
+      padding: 0.5rem;
+    }
+    
+    .fixed {
+      position: fixed;
+    }
+
+    .top-0 {
+      top: 0;
+    }
+
+    .left-0 {
+      left: 0;
+    }
+
+    .bottom-0 {
+      bottom: 0;
+    }
+    
+    .right-0 {
+      right: 0;
+    }
+  </style>
+
+  <div class="item fixed top-0 left-0">item 1</div>
+  <div class="item fixed top-0 right-0">item 2</div>
+  <div class="item fixed bottom-0 right-0">item 3</div>
+  <div class="item fixed bottom-0 left-0">item 4</div> -->
+
+  <!-- <h1>Q. position</h1>
+
+  <style>
+    .container {
+      width: 100px;
+      height: 100px;
+      border: 1px solid;
+    }
+
+    .item {
+      width: 50px; 
+      height: 50px;
+      background-color: #000;
+    }
+    
+    .relative {
+      position: relative;
+    }
+
+    .absolute {
+      position: absolute;
+    }
+
+    .top-0 {
+      top: 0;
+    }
+
+    .left-0 {
+      left: 0;
+    }
+
+    .bottom-0 {
+      bottom: 0;
+    }
+    
+    .right-0 {
+      right: 0;
+    }
+
+    .top-25px {
+      top: 25px;
+    }
+
+    .left-25px {
+      left: 25px;
+    }
+  </style>
+
+  <h3>check</h3>
+
+  <div class="container relative">
+    <div class="item absolute top-0 left-0"></div>
+    <div class="item absolute right-0 bottom-0"></div>
+  </div>
+
+  <h3>center</h3>
+
+  <div class="container">
+    <div class="item relative top-25px left-25px"></div>
+  </div> -->
+
+  <!-- <h1>transform</h1>
+  <p>변형</p>
+
+  <style>
+    .item {
+      background-color: #ddd;
+      width: 100px;
+      height: 100px;
+    }
+
+    .translate-4 {
+      /* translate: 이동 */
+      /* translate(x, y) */
+      transform: translate(1rem, 1rem);
+    }
+
+    .scale-110 {
+      /* 크기 조절 */
+      transform: scale(1.1);
+    }
+
+    .rotate-12 {
+      /* 회전, deg(degree) 각도 */
+      transform: rotate(12deg);
+    }
+  </style>
+
+
+  <h3>transform: none(default)</h3>
+  <div class="item"></div>
+
+  <h3>transform: translate</h3>
+  <div class="item translate-4"></div>
+
+  <h3>transform: scale</h3>
+  <div class="item scale-110"></div>
+
+  <h3>transform: rotate</h3>
+  <div class="item rotate-12"></div> -->
+
+
+  <!-- <h1>object fit</h1>
+  <p>이미지 맞춤 처리</p>
+
+  <style>
+    img {
+      width: 200px;
+      height: 200px;
+      border: 1px solid;
+    }
+
+    .object-fill {
+      object-fit: fill;
+    }
+
+    .object-contain {
+      object-fit: contain;
+    }
+
+    .object-cover {
+      object-fit: cover;
+    }
+  </style>
+
+
+  <h3>object fit: fill (default)</h3>
+  <p>
+    이미지가 주어진 공간을 채운다
+    이미지가 늘어나거나 줄어들 수 있다
+  </p>
+  <img class="object-fill" src="https://celebrationspress.com/wp-content/uploads/2018/02/021218TB.jpg" alt="">
+
+  <h3>object fit: cover</h3>
+  <p>
+    이미지가 주어진 공간을 채운다
+    이미지의 원본비율을 유지한다
+    이미지가 잘릴 수 있다
+  </p>
+  <img class="object-cover" src="https://celebrationspress.com/wp-content/uploads/2018/02/021218TB.jpg" alt="">
+
+  <h3>object fit: contain</h3>
+  <p>
+    이미지가 원본비율을 유지한다
+  </p>
+  <img class="object-contain" src="https://celebrationspress.com/wp-content/uploads/2018/02/021218TB.jpg" alt=""> -->
+
+
+  <!-- <h1>background image</h1>
+  <p>배경 이미지</p>
+
+  <style>
+    .container {
+      width: 200px;
+      height: 200px;
+      border: 1px solid;
+      color: #fff;
+    }
+
+    .bg-image {
+      /* 배경이미지의 주소 설정 */
+      background-image: url("https://static.wikia.nocookie.net/disney/images/e/e6/Profile_-_Pumbaa.jpeg/revision/latest?cb=20190312043302");
+      /* 배경 이미지의 크기 cover(엘리먼트를 채운다) */
+      background-size: cover;
+      /* 배경 이미지의 위치 center(가운데) */
+      background-position: center;
+    }
+  </style>
+
+  <h3>background image</h3>
+  <div class="container bg-image">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Laboriosam eos harum maiores possimus, 
+    dolorum rem facere reprehenderit autem inventore neque veniam aspernatur aperiam mollitia quo voluptatibus expedita, 
+    quasi, numquam velit.
+  </div> -->
+
+
+  <!-- <h1>flex</h1>
+
+  <pre>
+    flex 컨테이너 속성
+    1 flex direction
+    2 flex wrap
+    3 justify content
+    4 align items
+
+    flex 아이템 속성
+    1 flex grow
+    2 flex shrink
+    3 flex basis
+    4 flex order
+  </pre>
+
+  <style>
+    .container {
+      border: 1px solid;
+    }
+
+    .flex {
+      display: flex;
+    }
+    
+    .item {
+      padding: 0.5rem;
+      background-color: #ddd;
+    }
+  </style>
+
+  <div class="container flex">
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+  </div> -->
+
+
+  <!-- <h1>flex direction</h1>
+  <p>아이템의 배열 방향</p>
+
+  <style>
+    .container {
+      border: 1px solid;
+    }
+     
+    .item {
+      background-color: #ddd;
+      padding: 0.5rem;
+    }
+    
+    .flex {
+      display: flex;
+    }
+
+    .flex-row {
+      flex-direction: row;
+    }
+
+    .flex-col {
+      flex-direction: column;
+    }
+  </style>
+
+
+  <h3>flex direction: row (default)</h3>
+  <div class="container flex flex-row">
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+  </div>
+
+
+  <h3>flex direction: column</h3>
+  <div class="container flex flex-col">
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+  </div> -->
+
+  <!-- <h1>flex wrap</h1>
+  <p>아이템을 감쌀 것인지 결정</p>
+
+  <style>
+    .container {
+      border: 1px solid;
+    }
+
+    .item {
+      background-color: #ddd;
+      width: 200px;
+      padding: 0.5rem;
+    }
+
+    .flex {
+      display: flex;
+    }
+    
+    .flex-nowrap {
+      flex-wrap: nowrap;
+    }
+
+    .flex-wrap {
+      flex-wrap: wrap;
+    }
+  </style>
+
+  <h3>flex wrap: nowrap (기본값)</h3>
+
+  <div class="container flex flex-nowrap">
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+  </div>
+
+  <h3>flex wrap: wrap</h3>
+
+  <div class="container flex flex-wrap">
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+  </div> -->
+
+
+  <!-- <h1>justify content (row 방향)</h1>
+  <p>아이템의 배열 방법</p>
+
+  <style>
+    .container {
+      border: 1px solid;
+    }
+
+    .item {
+      background-color: #ddd;
+      padding: 0.5rem;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .flex-row {
+      flex-direction: row;
+    }
+    
+    .justify-start {
+      justify-content: flex-start;
+    }
+
+    .justify-center {
+      justify-content: center;
+    }
+
+    .justify-between {
+      justify-content: space-between
+    }
+
+    .justify-end {
+      justify-content: flex-end;
+    }
+  </style>
+
+  <h3>justify content: flex-start (default)</h3>
+
+  <div class="container flex flex-row justify-start">
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+  </div>
+
+  <h3>justify content: center</h3>
+
+  <div class="container flex flex-row justify-center">
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+  </div>
+  
+  <h3>justify content: space-between</h3>
+
+  <div class="container flex flex-row justify-between">
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+  </div>
+
+  <h3>justify content: flex-end</h3>
+
+  <div class="container flex flex-row justify-end">
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+  </div> -->
+
+
+  <!-- <h1>justify content (col 방향)</h1>
+  <p>아이템의 배열 방법</p>
+
+  <style>
+    .container {
+      border: 1px solid;
+      height: 200px;
+    }
+    
+    .item {
+      background-color: #ddd;
+      padding: 0.5rem;
+    }
+    
+    .flex {
+      display: flex;
+    }
+    
+    .flex-col {
+      flex-direction: column;
+    }
+
+    .justify-start {
+      justify-content: flex-start;
+    }
+
+    .justify-center {
+      justify-content: center;
+    }
+
+    .justify-between {
+      justify-content:space-between
+    }
+
+    .justify-end {
+      justify-content: flex-end;
+    }
+  </style>
+
+  <h3>justify content: flex-start (default)</h3>
+
+  <div class="container flex flex-col justify-start">
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+  </div>
+
+  <h3>justify content: center</h3>
+
+  <div class="container flex flex-col justify-center">
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+  </div>
+  
+  <h3>justify content: space-between</h3>
+
+  <div class="container flex flex-col justify-between">
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+  </div>
+
+  <h3>justify content: flex-end</h3>
+
+  <div class="container flex flex-col justify-end">
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+  </div> -->
+
+
+  <!-- <h1>align items (row 방향)</h1>
+  <p>행의 위치</p>
+
+  <style>
+    .container {
+      border: 1px solid;
+      height: 100px;
+    }
+
+    .item {
+      background-color: #ddd;
+      padding: 0.5rem;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .flex-row {
+      flex-direction: row;
+    }
+    
+    .items-stretch {
+      align-items: stretch;
+    }
+
+    .items-start {
+      align-items: flex-start;
+    }
+
+    .items-center {
+      align-items: center;
+    }
+
+    .items-end {
+      align-items: flex-end;
+    }
+  </style>
+
+  <h3>align items: stretch (default)</h3>
+
+  <div class="container flex flex-row items-stretch">
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+  </div>
+
+  <h3>align items: flex start</h3>
+
+  <div class="container flex flex-row items-start">
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+  </div>
+  
+  <h3>align items: center</h3>
+
+  <div class="container flex flex-row items-center">
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+  </div>
+
+  <h3>align items: flex-end</h3>
+
+  <div class="container flex flex-row items-end">
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+  </div> -->
+
+  <h1>align items (col 방향)</h1>
+  <p>열의 위치</p>
+
+  <style>
+    .container {
+      border: 1px solid;
+    }
+
+    .item {
+      background-color: #ddd;
+      padding: 0.5rem;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .flex-col {
+      flex-direction: column;
+    }
+    
+    .items-stretch {
+      align-items: stretch;
+    }
+
+    .items-start {
+      align-items: flex-start;
+    }
+
+    .items-center {
+      align-items: center;
+    }
+
+    .items-end {
+      align-items: flex-end;
+    }
+  </style>
+
+  <h3>align items: stretch (default)</h3>
+
+  <div class="container flex flex-col items-stretch">
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+  </div>
+
+  <h3>align items: flex start</h3>
+
+  <div class="container flex flex-col items-start">
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+  </div>
+  
+  <h3>align items: center</h3>
+
+  <div class="container flex flex-col items-center">
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+  </div>
+
+  <h3>align items: flex-end</h3>
+
+  <div class="container flex flex-col items-end">
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+  </div>
+
 
 </body>
 </html>
